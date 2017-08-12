@@ -116,7 +116,7 @@
 1. Move to website repository
 1. Create a branch for a new blog post `git checkout -b 0.7.0-Blog-Post develop`
 1. Create Blog Post i.e. `.\input\blog\2017-03-07-cake-v0.18.0-released.md`
-1. You can get contibutors using the console `cake-secrets\Processes\FetchContributors`
+1. You can get contibutors using the console `secrets\Processes\FetchContributors`
   * dotnet restore
   * dotnet run "cake-build" "cake" "v0.17.0" "v0.18.0" "authors.text"
 1. Bump the Cake Tool Version number in `tools\package.config` to the latest released version, i.e. the version you just released

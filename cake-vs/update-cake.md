@@ -4,8 +4,8 @@
 
 You'll need the following installed:
 
-- Visual Studio 2015
-- 'Extensibility Tools' extension
+- Visual Studio 2017
+- Visual Studio extension development workload
 - Visual Studio Code
 
 ## Basic Approach

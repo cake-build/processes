@@ -109,10 +109,14 @@
 1. Commit changes. Use message similar to `(build) Updated Cake tool to version 0.13.0`
 1. Push branch
 1. Move to resources repository
+1. Switch to the develop branch `git checkout develop`
 1. Open the `packages.config` file
 1. Update the Cake version number to be the same as the version that you have just released
 1. Commit changes. Use message similar to `(build) Updated Cake tool to version 0.13.0`
-1. Push branch
+1. Push branch `git push`
+1. Switch to the master branch `git checkout master`
+1. Merge changes from develop branch `git merge --no-ff develop`
+1. Push branch `git push`
 1. Move to website repository
 1. Create a branch for a new blog post `git checkout -b 0.7.0-Blog-Post develop`
 1. Create Blog Post i.e. `.\input\blog\2017-03-07-cake-v0.18.0-released.md`

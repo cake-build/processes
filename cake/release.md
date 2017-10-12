@@ -86,14 +86,14 @@
 ## After a release/hotfix
 
 1. Make sure that everything has pushed correctly to nuget
-  * [Cake](https://www.nuget.org/packages/Cake/)
-  * [Cake.Core](https://www.nuget.org/packages/Cake.Core/)
-  * [Cake.CoreCLR](https://www.nuget.org/packages/Cake.CoreCLR/)
-  * [Cake.Common](https://www.nuget.org/packages/Cake.Common/)
-  * [Cake.Testing](https://www.nuget.org/packages/Cake.Testing/)
-  * [Cake.NuGet](https://www.nuget.org/packages/Cake.NuGet/)
+    * [Cake](https://www.nuget.org/packages/Cake/)
+    * [Cake.Core](https://www.nuget.org/packages/Cake.Core/)
+    * [Cake.CoreCLR](https://www.nuget.org/packages/Cake.CoreCLR/)
+    * [Cake.Common](https://www.nuget.org/packages/Cake.Common/)
+    * [Cake.Testing](https://www.nuget.org/packages/Cake.Testing/)
+    * [Cake.NuGet](https://www.nuget.org/packages/Cake.NuGet/)
 1. Make sure that everything has pushed correctly to chocolatey
-  * [cake.portable](https://chocolatey.org/packages/cake.portable) **NOTE:** This package might be subject to moderation, and might not appear immediately
+    * [cake.portable](https://chocolatey.org/packages/cake.portable) **NOTE:** This package might be subject to moderation, and might not appear immediately
 1. Move to homebrew repository
 1. Create a new branch for current release `git checkout -b cake-0.7.0`
 1. Open the `Formula/cake.rb`
@@ -121,8 +121,8 @@
 1. Create a branch for a new blog post `git checkout -b 0.7.0-Blog-Post develop`
 1. Create Blog Post i.e. `.\input\blog\2017-03-07-cake-v0.18.0-released.md`
 1. You can get contibutors using the console `secrets\Processes\FetchContributors`
-  * dotnet restore
-  * dotnet run "cake-build" "cake" "v0.17.0" "v0.18.0" "authors.text"
+    * dotnet restore
+    * dotnet run "cake-build" "cake" "v0.17.0" "v0.18.0" "authors.text"
 1. Bump the Cake Tool Version number in `tools\package.config` to the latest released version, i.e. the version you just released
 1. Commit changes to `tools\package.config` file using message similar to `(build) Updated Cake tool to version 0.14.0`
 1. Commit blog post using message similar to `v0.14.0 Blog Post`

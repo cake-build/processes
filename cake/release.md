@@ -13,6 +13,8 @@
 1. Make sure `develop` branch of `cake-build/website` is up to date `git fetch` then `git rebase origin/develop`.
 1. Make sure `master` branch of `cake-build/website` is up to date `git fetch` then `git rebase origin/master`.
 1. Make sure `master` branch of `cake-build/example` is up to date `git fetch` then `git rebase origin/master`.
+1. Make sure `develop` branch of `cake-build/resources` is up to date `git fetch` then `git rebase origin/develop`.
+1. Make sure `master` branch of `cake-build/resources` is up to date `git fetch` then `git rebase origin/master`.
 1. Make sure that all issues associated with pull requests getting released in this milestone are associated with the milestone, or that the pull request is associated with the milestone, if no issue was created.
 1. Make sure you have a fork of `Homebrew/homebrew-core`
 1. Make sure upstream points at `Homebrew/homebrew-core`

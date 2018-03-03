@@ -7,7 +7,7 @@
 
 ### Manual Approach
 
-1. Add the CAKE_GITHUB_USERNAME and CAKE_GITHUB_PASSWORD environment variables into your system. These should be of a user who has access to the Cake GitHub Repository.  **NOTE:** at the current time, the cake-build-bot doesn't seem to have the necessary rights to do this work.
+1. Add the CAKE_GITHUB_USERNAME and CAKE_GITHUB_PASSWORD environment variables into your system. These should be of a user who has access to the Cake GitHub Repository.
 1. Make sure `develop` branch of `cake-build/cake` is up to date `git fetch` then `git rebase origin/develop`.
 1. Make sure `main` branch of `cake-build/cake` is up to date `git fetch` then `git rebase origin/main`.
 1. Make sure `develop` branch of `cake-build/website` is up to date `git fetch` then `git rebase origin/develop`.

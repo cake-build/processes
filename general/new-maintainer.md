@@ -18,3 +18,4 @@ When bringing on a new maintainer, the following things need to be done:
   * https://www.nuget.org/packages/Cake.Scripting.Abstractions
   * https://www.nuget.org/packages/Cake.Frosting
   * https://www.nuget.org/packages/Cake.Frosting.Template
+1. Add user of NuGet Cake-Build Organisation

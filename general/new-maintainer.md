@@ -19,3 +19,12 @@ When bringing on a new maintainer, the following things need to be done:
   * https://www.nuget.org/packages/Cake.Frosting
   * https://www.nuget.org/packages/Cake.Frosting.Template
 1. Add user of NuGet Cake-Build Organisation
+1. Add user name to all required source files:
+  * https://github.com/cake-build/cake/blob/develop/nuspec/Cake.CoreCLR.nuspec
+  * https://github.com/cake-build/cake/blob/develop/nuspec/Cake.CoreCLR.symbols.nuspec
+  * https://github.com/cake-build/cake/blob/develop/nuspec/Cake.Portable.nuspec
+  * https://github.com/cake-build/cake/blob/develop/nuspec/Cake.nuspec
+  * https://github.com/cake-build/cake/blob/develop/nuspec/Cake.symbols.nuspec
+  * https://github.com/cake-build/cake/blob/develop/src/Shared.msbuild
+  * https://github.com/cake-build/cake/blob/develop/README.md
+  * https://github.com/cake-build/cake/blob/a57123ee888a1d2131f3b006d9fd86a30073e728/src/Cake.Common.Tests/Unit/Solution/Project/Properties/AssemblyInfoParserTests.cs#L147

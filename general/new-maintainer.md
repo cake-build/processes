@@ -28,3 +28,4 @@ When bringing on a new maintainer, the following things need to be done:
   * https://github.com/cake-build/cake/blob/develop/src/Shared.msbuild
   * https://github.com/cake-build/cake/blob/develop/README.md
   * https://github.com/cake-build/cake/blob/a57123ee888a1d2131f3b006d9fd86a30073e728/src/Cake.Common.Tests/Unit/Solution/Project/Properties/AssemblyInfoParserTests.cs#L147
+1. Check to see if new person has a keybase account, if not, get them to create one, and then add them to cake-build team on keybase.

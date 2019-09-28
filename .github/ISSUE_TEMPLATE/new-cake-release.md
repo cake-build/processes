@@ -33,6 +33,7 @@ assignees: ''
 - [ ] Make sure all issues within the milestone are tagged with either Bug, Feature, Improvement, Documentation, Breaking change, or Build
 - [ ] Make sure all issues associated with the milestone are closed
 - [ ] Make sure that all issues only have 1 label associated with them
+- [ ] Raise an issue in the Cake.AddinDiscoverer repo **if there are any breaking changes** so the discoverer can be modified to generate a new markdown report and also Excel report to track which addins are compatible with this new release of Cake.
 
 ## When doing a release
 

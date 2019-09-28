@@ -17,35 +17,35 @@ assignees: ''
 
 
 ### Automated Approach
-- [x] Make sure you have a fork of `Homebrew/homebrew-core`.
-- [x] Run the `Prereqs.ps1` file, using the following as an example `.\Prereqs.ps1 -GithubUsername gep13` (use your own username). This will clone a new version of all required repositories.
+- [ ] Make sure you have a fork of `Homebrew/homebrew-core`.
+- [ ] Run the `Prereqs.ps1` file, using the following as an example `.\Prereqs.ps1 -GithubUsername gep13` (use your own username). This will clone a new version of all required repositories.
 
 ## Let people know that things are happening...
 
-- [x] Go to the Gitter room for Cake and inform people that a release is away to happen.  Use a message similar to the following `@/all We will soon start preparing for the [0.35.0 release](https://github.com/cake-build/cake/milestone/60?closed=1) of Cake. So this is a friendly reminder to pin your Cake version.`
-- [x] Go to the Gitter room for Cake-Contrib and inform people that a release is away to happen.  Use a message similar to the following `@/all We will soon start preparing for the [0.35.0 release](https://github.com/cake-build/cake/milestone/60?closed=1) of Cake. So this is a friendly reminder to pin your Cake version.`
-- [x] Go to the General Channel in the Slack Team for Cake-Contrib and inform peoploe that a release is away to happen.  Use a message similar to the following `@channel We will soon start preparing for the 0.35.0 release ( https://github.com/cake-build/cake/milestone/60?closed=1 ) of Cake. So this is a friendly reminder to pin your Cake version.`
-- [x] Using the Cake Twitter account, tweet to let people know that the release is away to happen.  Use something like the following `We are starting to prepare our next release, 0.35.0 (https://github.com/cake-build/cake/milestone/60?closed=1).  This is your friendly reminder that if you haven't pinned to a specific version of Cake, you should do it now :-) https://cakebuild.net/docs/tutorials/pinning-cake-version`
-- [x] Retweet the above from the cake-contrib twitter account
+- [ ] Go to the Gitter room for Cake and inform people that a release is away to happen.  Use a message similar to the following `@/all We will soon start preparing for the [0.35.0 release](https://github.com/cake-build/cake/milestone/60?closed=1) of Cake. So this is a friendly reminder to pin your Cake version.`
+- [ ] Go to the Gitter room for Cake-Contrib and inform people that a release is away to happen.  Use a message similar to the following `@/all We will soon start preparing for the [0.35.0 release](https://github.com/cake-build/cake/milestone/60?closed=1) of Cake. So this is a friendly reminder to pin your Cake version.`
+- [ ] Go to the General Channel in the Slack Team for Cake-Contrib and inform peoploe that a release is away to happen.  Use a message similar to the following `@channel We will soon start preparing for the 0.35.0 release ( https://github.com/cake-build/cake/milestone/60?closed=1 ) of Cake. So this is a friendly reminder to pin your Cake version.`
+- [ ] Using the Cake Twitter account, tweet to let people know that the release is away to happen.  Use something like the following `We are starting to prepare our next release, 0.35.0 (https://github.com/cake-build/cake/milestone/60?closed=1).  This is your friendly reminder that if you haven't pinned to a specific version of Cake, you should do it now :-) https://cakebuild.net/docs/tutorials/pinning-cake-version`
+- [ ] Retweet the above from the cake-contrib twitter account
 
 ## GitHub Issues Pre-requisites
 
-- [x] Make sure all issues within the milestone are tagged with either Bug, Feature, Improvement, Documentation, Breaking change, or Build
-- [x] Make sure all issues associated with the milestone are closed
-- [x] Make sure that all issues only have 1 label associated with them
+- [ ] Make sure all issues within the milestone are tagged with either Bug, Feature, Improvement, Documentation, Breaking change, or Build
+- [ ] Make sure all issues associated with the milestone are closed
+- [ ] Make sure that all issues only have 1 label associated with them
 
 ## When doing a release
 
-- [x] Create branch locally to match the name of the release, for example `git checkout -b release/0.35.0 develop`
-- [x] Update `releasenotes.md` to include next version number as a placeholder and save the file
-- [x] Create release notes on GitHub using the `ReleaseNotes` task (`.\build.ps1 --target=ReleaseNotes`)
-- [x] Update `releasenotes.md` with generated content (making sure to keep the formatting the same)
-- [x] Build everything (`./build.ps1`) to make sure it works.
-- [x] Commit the changes to `releasenotes.md` and `solutioninfo.cs`. Use comment like `(build) Updated version and release notes.`
-- [x] At this point, if you want to share the work to date, and validate something, push the local release branch to GitHub
-- [x] Assuming everything is ok, switch to `main` branch (`git checkout main`)
-- [x] Merge release branch to the `main` `git merge --no-ff release/0.35.0`
-- [x] Build everything (`./build.ps1`) to make sure it works (we can never be too sure).
+- [ ] Create branch locally to match the name of the release, for example `git checkout -b release/0.35.0 develop`
+- [ ] Update `releasenotes.md` to include next version number as a placeholder and save the file
+- [ ] Create release notes on GitHub using the `ReleaseNotes` task (`.\build.ps1 --target=ReleaseNotes`)
+- [ ] Update `releasenotes.md` with generated content (making sure to keep the formatting the same)
+- [ ] Build everything (`./build.ps1`) to make sure it works.
+- [ ] Commit the changes to `releasenotes.md` and `solutioninfo.cs`. Use comment like `(build) Updated version and release notes.`
+- [ ] At this point, if you want to share the work to date, and validate something, push the local release branch to GitHub
+- [ ] Assuming everything is ok, switch to `main` branch (`git checkout main`)
+- [ ] Merge release branch to the `main` `git merge --no-ff release/0.35.0`
+- [ ] Build everything (`./build.ps1`) to make sure it works (we can never be too sure).
 - [ ] Push `main` branch.
 - [ ] Make sure that both the [AppVeyor](https://ci.appveyor.com/project/cakebuild/cake), [Bitrise Ubuntu](https://www.bitrise.io/app/b811c91a26b1ea80#/builds) and [Bitrise OSX](https://www.bitrise.io/app/7a9d707b00881436#/builds) builds succeed before going any further.
 - [ ] Assuming that everything went ok, go to the draft release in GitHub and click Edit
@@ -98,7 +98,7 @@ assignees: ''
 - [ ] Push branch `git push`
 - [ ] Trigger new container builds on [Azure Pipelines](https://dev.azure.com/cake-build/Cake/_build?definitionId=9).
 - [ ] Move to website repository
-- [x] Create a branch for a new blog post `git checkout -b 0.35.0-Blog-Post master`
+- [ ] Create a branch for a new blog post `git checkout -b 0.35.0-Blog-Post master`
 - [ ] You can get draft blog post using the console `secrets\Processes\FetchContributors`
     * dotnet restore
     * dotnet run "cake-build" "cake" "v0.34.1" "d4a0b3a07caa6a3873cb0da58766ffdb7ce22e11" "\cake0.35.0\repositories\devlead\website\input\blog" "v0.35.0"

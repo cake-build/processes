@@ -2,7 +2,7 @@
 
 * [VSTS Publisher](https://marketplace.visualstudio.com/manage/publishers/cake-build)
 * [Manage Marketplace Organisation](https://dev.azure.com/cakebuild) - used when updating access token, etc.
-* [Information on how to update token](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#get-a-personal-access-token)
+* [Information on how to update token](https://docs.microsoft.com/en-us/azure/devops/extend/publish/command-line?view=azure-devops#acquire-a-personal-access-token)
 
 ## Repository Pre-requisites
 

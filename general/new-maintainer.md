@@ -18,6 +18,7 @@ When bringing on a new maintainer, the following things need to be done:
     * https://www.nuget.org/packages/Cake.Scripting.Abstractions
     * https://www.nuget.org/packages/Cake.Frosting
     * https://www.nuget.org/packages/Cake.Frosting.Template
+    * https://chocolatey.org/packages/cake.portable
 1. Add user of NuGet Cake-Build Organisation
 1. Add user name to all required source files:
     * https://github.com/cake-build/cake/blob/develop/nuspec/Cake.CoreCLR.nuspec

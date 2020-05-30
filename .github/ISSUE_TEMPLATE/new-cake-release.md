@@ -103,8 +103,8 @@ assignees: ''
 - [ ] You can get draft blog post using the console `secrets\Processes\FetchContributors`
     * dotnet restore
     * dotnet run "cake-build" "cake" "v0.34.1" "d4a0b3a07caa6a3873cb0da58766ffdb7ce22e11" "\cake0.35.0\repositories\devlead\website\input\blog" "v0.35.0"
-- [ ] Bump the Cake Tool Version number in `tools\package.config` to the latest released version, i.e. the version you just released
-- [ ] Commit changes to `tools\package.config` file using message similar to `(build) Updated Cake tool to version 0.35.0`
+- [ ] Bump the Cake Tool Version number in `build.config` to the latest released version, i.e. the version you just released
+- [ ] Commit changes to `build.config` file using message similar to `(build) Updated Cake tool to version 0.35.0`
 - [ ] Commit blog post using message similar to `v0.35.0 Blog Post`
 - [ ] Push branch and submit pull request
 - [ ] Have someone else verify the contents

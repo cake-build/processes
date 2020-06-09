@@ -58,7 +58,7 @@ assignees: ''
 - [ ] Resolve any merge conflicts
 - [ ] Bump the Cake Tool Version number in `build.config` to the latest released version, i.e. the version you just released
 - [ ] Build everything (`./build.ps1`) to make sure it works.
-- [ ] Commit the changes to `build.ps1` and `build.sh`  **NOTE:** There will be other changes to the *.json files as well, commit everything. Use commit message like `(build) Updated Cake tool to version 0.35.0`
+- [ ] Commit the changes to`build.config`. Use commit message like `(build) Updated Cake tool to version 0.35.0`
 - [ ] Push `develop` branch.
 - [ ] Delete the local release branch that was created `git branch -d release/0.35.0` (and the remote one, if pushed to GitHub `git push origin --delete release/0.35.0`)
 

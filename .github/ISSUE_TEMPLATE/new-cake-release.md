@@ -77,8 +77,8 @@ assignees: ''
 - [ ] Move to homebrew repository
 - [ ] Create a new branch for current release `git checkout -b cake-0.35.0`
 - [ ] Open the `Formula/cake.rb`
-- [ ] Update the url (line 4) to be the new download location
-- [ ] Update the sha256 (line 5) to be the value that was generated earlier by the `Publish-HomeBrew` task
+- [ ] Update the url (line 7) to be the new download location
+- [ ] Update the sha256 (line 8) to be the value that was generated earlier by the `Publish-HomeBrew` task
 - [ ] Commit the changes to `cake.rb`  **NOTE:** Commit message should use the following format `cake 0.35.0`  **NOTE:** Make sure to use a lower case `C` as that is the [preferred formatting in the Homebrew repo](https://github.com/Homebrew/homebrew-core/pull/4857#issuecomment-247475453)
 - [ ] Push the new branch to your fork
 - [ ] Open a PR against the `master` branch of `Homebrew/homebrew-core`

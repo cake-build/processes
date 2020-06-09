@@ -122,7 +122,7 @@ assignees: ''
 - [ ] Go to [Medium](https://medium.com/@cakebuildnet)
   - [ ] Log into Medium as the cake-build twitter user
   - [ ] Click on the Cake logo at top right of screen, then click on Stories
-  - [ ] Click on Import a Store
+  - [ ] Click on Import a Story
   - [ ]  Enter url of blog post and click Import (if this errors out, just try it again)
   - [ ] ~~ Import failed this time so used medium [Create post API](https://github.com/Medium/medium-api-docs/blob/master/README.md#creating-a-post) to create draft with canonicalUrl ~~
   - [ ] Click on see your story

@@ -22,7 +22,7 @@ assignees: ''
 - [ ] Create release notes on GitHub using the `ReleaseNotes` task (`.\build.ps1 --target=CreateReleaseNotes`)
 - [ ] Build everything (`./build.ps1`) to make sure it works.
 - [ ] At this point, if you want to share the work to date, and validate something, push the local release branch to GitHub
-- [ ] Assuming everything is ok, switch to `main` branch (`git checkout master`)
+- [ ] Assuming everything is ok, switch to `master` branch (`git checkout master`)
 - [ ] Merge release branch to the `master` `git merge --no-ff release/0.35.0`
 - [ ] Build everything (`./build.ps1`) to make sure it works (we can never be too sure).
 - [ ] Push `master` branch.

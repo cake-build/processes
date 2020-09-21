@@ -42,4 +42,5 @@ assignees: ''
 - [ ] Make sure that everything has pushed correctly to nuget
     * [Cake.Frosting](https://www.nuget.org/packages/Cake.Frosting/)
     * [Cake.Frosting.Template](https://www.nuget.org/packages/Cake.Frosting.Template/)
+- [ ] Update Frosting [Build](https://github.com/cake-build/frosting/blob/develop/build/Build.csproj) to use released version
 - [ ] Go and have a drink!

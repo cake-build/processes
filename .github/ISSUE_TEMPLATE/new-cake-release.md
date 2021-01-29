@@ -18,7 +18,7 @@ assignees: ''
 
 ### Automated Approach
 - [ ] Make sure you have a fork of `Homebrew/homebrew-core`.
-- [ ] Run the `Prereqs.ps1` file, using the following as an example `.\Prereqs.ps1 -GithubUsername gep13` (use your own username). This will clone a new version of all required repositories.
+- [ ] Run the [`Prereqs.ps1`](https://github.com/cake-build/processes/blob/master/cake/Prereqs.ps1) file, using the following as an example `.\Prereqs.ps1 -GithubUsername gep13` (use your own username). This will clone a new version of all required repositories.
 
 ## Let people know that things are happening...
 

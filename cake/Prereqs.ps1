@@ -1,7 +1,7 @@
 [CmdletBinding(SupportsShouldProcess=$True)]
 Param(
     [Parameter(Mandatory=$true)]
-    [ValidateSet("patriksvensson", "devlead", "gep13", "agc93", "mholo65", "daveaglick", "pascalberger")]
+    [ValidateSet("patriksvensson", "devlead", "gep13", "agc93", "mholo65", "daveaglick", "pascalberger", "augustoproiete", "nils-a")]
     [string]$GithubUsername,
     [string]$RootName = "repositories"
 )

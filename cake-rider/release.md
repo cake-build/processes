@@ -3,6 +3,7 @@
 * [JetBrains Marketplace](https://plugins.jetbrains.com/marketplace/)
 * [cake-build organization on the Marketplace](https://plugins.jetbrains.com/organization/cake-build)
 * Though the plugin is `grade`/`kotlin`/`java` stuff the build- and release process is done by utilizing `cake.intellij.recipe` and therefore everything is very `cake.recipe`-like.
+* Documentation for the plugin is part of `cake-build/website` before starting the release a PR to update the documentation should be in place. See [documentation.md](./documentation.md)
 
 ## GitHub Issues Pre-requisites
 
@@ -57,3 +58,10 @@ the new version is visible  in the "Stable" channel.
 
 After it has been manually approved by JetBrains (shouldn't take longer than two days).
 The approval or any modification request is mailed to the `cakebot`.
+(Experiences from versions 0.2.0 and 0.3.0 show that approval by JetBrains is really fast, when the release is done
+during european "business hours". In those cases approval was granted after a couple of hours.)
+
+## Steps after the new version appears it the marketplace
+
+1. If documentation has changed, merge the corresponding PR in `cake-build/website`
+1. Optional: Create a blog-post about the new release

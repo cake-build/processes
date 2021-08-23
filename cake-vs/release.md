@@ -19,7 +19,7 @@ This will be needed to manually upload the generated VSIX file, as there is no "
 1. Run `.\build.ps1`
 1. Assuming everything is ok, switch to `master` branch (`git checkout master`)
 1. Merge release branch to the `master` `git merge --no-ff release/0.7.0`
-1. Run `.\build.ps1 -target releasenotes` to generate a draft GitHub Release
+1. Run `.\build.ps1 --target=create-release-notes` to generate a draft GitHub Release
 1. Push `master` branch.
 1. Click the Publish button on the GitHub release.  This will tag the repository and trigger another build on AppVeyor
 1. Switch to `develop` branch `git checkout develop`
@@ -35,7 +35,7 @@ This will be needed to manually upload the generated VSIX file, as there is no "
 1. Run `.\build.ps1`
 1. Assuming everything is ok, switch to `master` branch (`git checkout master`)
 1. Merge hotfix branch into `master` `git merge --no-ff hotfix/0.6.4`
-1. Run `.\build.ps1 -target releasenotes` to generate a draft GitHub Release
+1. Run `.\build.ps1 --target=create-release-notes` to generate a draft GitHub Release
 1. Push `master` branch.
 1. Click the Publish button on the GitHub release.  This will tag the repository and trigger another build on AppVeyor
 1. Switch to `develop` branch `git checkout develop`

@@ -50,7 +50,7 @@ This will be needed to manually upload the generated VSIX file, as there is no "
 1. Navigate to [AppVeyor](https://ci.appveyor.com/project/cakebuild/cake-vs/history) for the completed build which was tagged with the version number that has been created
 1. Download the Cake.VisualStudio.vsix file, which should be in the artifacts tab
 1. Navigate ane log into the Visual Studio Gallery linked above
-1. Click on `My Extensions`
+1. Click on `Publish Extension` on the top right corner
 1. Click on `Cake for Visual Studio`
 1. Click on `Edit`
 1. Click on `Change` in the `Upload` section

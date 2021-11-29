@@ -121,6 +121,6 @@ assignees: ''
 - [ ] .NET Foundation Newsletter
 - [ ] Submit news to form [forms.office.com/r/8hAv7S659s](https://forms.office.com/r/8hAv7S659s)
 - [ ] Submit request for [content amplification](https://github.com/dotnet-foundation/content) by the .NET Foundation
-  - [ ] https://github.com/dotnet-foundation/content/issues/44
+  - [ ] https://github.com/dotnet-foundation/content/issues/...
 - [ ] Go to the Cake Slack Channel and share the links to Medium, LinkedIn and reddit so that other team members can share them
 - [ ] Go and have a drink!

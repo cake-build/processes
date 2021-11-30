@@ -9,8 +9,8 @@ assignees: ''
 ## Useful information
 
 * [AppVeyor builds](https://ci.appveyor.com/project/cakebuild/cake)
-* [Travis builds](https://travis-ci.org/cake-build/cake)
-* [Bitrise](https://bitrise.io)
+* [GitHub Actions](https://github.com/cake-build/cake/actions)
+* [Bitrise MacOS](https://app.bitrise.io/app/42eaef77e8db4a5c) / [Bitrise Debian](https://app.bitrise.io/app/ea0c6b3c61eb1e79)
 * [Azure Pipelines](https://dev.azure.com/cake-build/Cake/_build)
 
 ## Repository Pre-requisites

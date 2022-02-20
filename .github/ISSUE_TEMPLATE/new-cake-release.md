@@ -67,7 +67,7 @@ assignees: ''
 - [ ] Make sure that everything has pushed correctly to nuget
   - `N/A` [Cake](https://www.nuget.org/packages/Cake/) (_deprecated with v2.0.0_)
   - [ ] [Cake.Tool](https://www.nuget.org/packages/Cake.Tool/)
-  - [ ] [Cake.Frosting](https://www.nuget.org/packages/Cake.CoreCLR/)
+  - [ ] [Cake.Frosting](https://www.nuget.org/packages/Cake.Frosting/)
   - `N/A` [Cake.CoreCLR](https://www.nuget.org/packages/Cake.CoreCLR/) (_deprecated with v2.0.0_)
   - [ ] [Cake.Core](https://www.nuget.org/packages/Cake.Core/)
   - [ ] [Cake.Common](https://www.nuget.org/packages/Cake.Common/)

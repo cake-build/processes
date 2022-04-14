@@ -20,10 +20,10 @@ assignees: ''
 
 ## Let people know that things are happening...
 
-- [ ] Go to the [Gitter room for Cake](https://gitter.im/cake-build/cake) and inform people that a release is away to happen. Use a message similar to the following `@/all We will soon start preparing for the [2.0.0 release](https://github.com/cake-build/cake/milestone/71?closed=1) of Cake. So this is a friendly reminder to pin your Cake version! :pushpin: :cake:`
-- [ ] Go to the [Gitter room for Cake-Contrib](https://gitter.im/cake-contrib/Lobby) and inform people that a release is away to happen. Use a message similar to the following `@/all We will soon start preparing for the [2.0.0 release](https://github.com/cake-build/cake/milestone/71?closed=1) of Cake. So this is a friendly reminder to pin your Cake version! :pushpin: :cake:`
-- [ ] Go to the General Channel in the Slack Team for Cake-Contrib and inform people that a release is away to happen. Use a message similar to the following `@channel We will soon start preparing for the [2.0.0 release](https://github.com/cake-build/cake/milestone/71?closed=1) of Cake. So this is a friendly reminder to pin your Cake version! :pushpin: :cake:`
-- [ ] Using the Cake Twitter account, tweet to let people know that the release is away to happen. Use something like the following `We are starting to prepare our next release, 2.0.0 (https://github.com/cake-build/cake/milestone/71?closed=1).  This is your friendly reminder that if you haven't pinned to a specific version of Cake, you should do it now :-) 📌 🍰 https://cakebuild.net/docs/writing-builds/reproducible-builds/`
+- [ ] Go to the [Gitter room for Cake](https://gitter.im/cake-build/cake) and inform people that a release is away to happen. Use a message similar to the following `@/all We will soon start preparing for the [x.x.x release](https://github.com/cake-build/cake/milestone/xx?closed=1) of Cake. So this is a friendly reminder to pin your Cake version! :pushpin: :cake:`
+- [ ] Go to the [Gitter room for Cake-Contrib](https://gitter.im/cake-contrib/Lobby) and inform people that a release is away to happen. Use a message similar to the following `@/all We will soon start preparing for the [x.x.x release](https://github.com/cake-build/cake/milestone/xx?closed=1) of Cake. So this is a friendly reminder to pin your Cake version! :pushpin: :cake:`
+- [ ] Go to the General Channel in the Slack Team for Cake-Contrib and inform people that a release is away to happen. Use a message similar to the following `@channel We will soon start preparing for the [x.x.x release](https://github.com/cake-build/cake/milestone/xx?closed=1) of Cake. So this is a friendly reminder to pin your Cake version! :pushpin: :cake:`
+- [ ] Using the Cake Twitter account, tweet to let people know that the release is away to happen. Use something like the following `We are starting to prepare our next release, x.x.x (https://github.com/cake-build/cake/milestone/xx?closed=1).  This is your friendly reminder that if you haven't pinned to a specific version of Cake, you should do it now :-) 📌 🍰 https://cakebuild.net/docs/writing-builds/reproducible-builds/`
 - [ ] Retweet the above from the cake-contrib twitter account
 
 ## GitHub Issues Pre-requisites
@@ -35,7 +35,7 @@ assignees: ''
 
 ## When doing a release
 
-- [ ] Create branch locally to match the name of the release, for example `git checkout -b release/2.0.0 develop`
+- [ ] Create branch locally to match the name of the release, for example `git checkout -b release/x.x.x develop`
 - [ ] Update `ReleaseNotes.md` to include next version number as a placeholder and save the file
 - [ ] Create release notes on GitHub using the `ReleaseNotes` task (`.\build.ps1 --target=ReleaseNotes`)
 - [ ] Update `ReleaseNotes.md` with generated content (making sure to keep the formatting the same)
@@ -43,7 +43,7 @@ assignees: ''
 - [ ] Commit the changes to `ReleaseNotes.md` and `SolutionInfo.cs`. Use comment like `(build) Updated version and release notes`
 - [ ] At this point, if you want to share the work to date, and validate something, push the local release branch to GitHub
 - [ ] Assuming everything is ok, switch to `main` branch (`git checkout main`)
-- [ ] Merge release branch to the `main` `git merge --no-ff release/2.0.0`
+- [ ] Merge release branch to the `main` `git merge --no-ff release/x.x.x`
 - [ ] Build everything (`./build.ps1`) to make sure it works (we can never be too sure).
 - [ ] Push `main` branch.
 - [ ] Make sure that both all builds succeed before going any further.
@@ -54,13 +54,13 @@ assignees: ''
 - [ ] Click the Publish Release button
 - [ ] This will trigger another build in AppVeyor, but this time with a tag.
 - [ ] Switch to `develop` branch `git checkout develop`
-- [ ] Merge release branch into develop `git merge --no-ff release/2.0.0`
+- [ ] Merge release branch into develop `git merge --no-ff release/x.x.x`
 - [ ] Resolve any merge conflicts
 - [ ] Bump the Cake Tool Version number in `.config\dotnet-tools.json` to the latest released version, i.e. the version you just released
 - [ ] Build everything (`./build.ps1`) to make sure it works.
-- [ ] Commit the changes to `.config\dotnet-tools.json`. Use commit message like `(build) Updated Cake Tool to version 2.0.0`
+- [ ] Commit the changes to `.config\dotnet-tools.json`. Use commit message like `(build) Updated Cake Tool to version x.x.x`
 - [ ] Push `develop` branch.
-- [ ] Delete the local release branch that was created `git branch -d release/2.0.0` (and the remote one, if pushed to GitHub `git push origin --delete release/2.0.0`)
+- [ ] Delete the local release branch that was created `git branch -d release/x.x.x` (and the remote one, if pushed to GitHub `git push origin --delete release/x.x.x`)
 
 ## After a release/hotfix
 
@@ -79,29 +79,29 @@ assignees: ''
 - [ ] Move to [example](https://github.com/cake-build/example) repository
   - [ ] Bump the Cake Tool Version number in `.config\dotnet-tools.json` to the latest released version, i.e. the version you just released
   - [ ] Build everything (`./build.ps1` or `./build.sh`) to make sure it works.
-  - [ ] Commit changes. Use message similar to `(build) Updated Cake tool to version 2.0.0`
+  - [ ] Commit changes. Use message similar to `(build) Updated Cake tool to version x.x.x`
   - [ ] Push branch
 - [ ] Move to [resources](https://github.com/cake-build/resources) repository
-  - [ ] Open the `packages.config` file
+  - [ ] Open the `dotnet-tool/.config/dotnet-tools.json` file
   - [ ] Update the Cake version number to be the same as the version that you have just released
-  - [ ] Commit changes. Use message similar to `(build) Updated Cake tool to version 2.0.0`
+  - [ ] Commit changes. Use message similar to `(build) Updated Cake tool to version x.x.x`
   - [ ] Push branch `git push`
-- [ ] Trigger new container builds on [Azure Pipelines](https://dev.azure.com/cake-build/Cake/_build?definitionId=9).
+- [ ] Trigger new container builds on [GitHub Actions](https://github.com/cake-build/docker/actions).
 - [ ] Move to [website](https://github.com/cake-build/website) repository
-  - [ ] Create a branch for a new blog post `git checkout -b 2.0.0-Blog-Post master`
+  - [ ] Create a branch for a new blog post `git checkout -b x.x.x-Blog-Post master`
   - [ ] You can get draft blog post using the console `secrets\Processes\FetchContributors`
-    - dotnet restore
-    - `dotnet run -- "cake-build" "cake" "v1.3.0" "xxx" "../../website/input/blog/" v2.0.0`
+    - `dotnet restore`
+    - `dotnet run -- "cake-build" "cake" "v2.1.0" "8861b463a4eb651f9e5149ee7f7ada47d03ae1ad" "../../../../cake-build/website/input/blog/" vx.x.x`
   - [ ] Bump the Cake Tool Version number in `.config\dotnet-tools.json` to the latest released version, i.e. the version you just released
-  - [ ] Commit changes to `.config\dotnet-tools.json` file using message similar to `(build) Updated Cake tool to version 2.0.0`
-- [ ] Commit blog post using message similar to `v2.0.0 Blog Post`
+  - [ ] Commit changes to `.config\dotnet-tools.json` file using message similar to `(build) Updated Cake tool to version x.x.x`
+- [ ] Commit blog post using message similar to `vx.x.x Blog Post`
 - [ ] Push branch and submit pull request
 - [ ] Have someone else verify the contents
 - [ ] Merge the Pull Request
 - [ ] Go to [develop.cakebuild.net](https://develop.cakebuild.net) once you receive the Azure notification in Slack to say that the development site is deployed.  Make sure that it works as expected.
 - [ ] Go to [cakebuild.net](https://cakebuild.net) once you receive the Azure notification in Slack to say that the development site is deployed.  Make sure that it works as expected.
-- [ ] Go to the [Cake-Contrib Gitter Room](https://gitter.im/cake-contrib/Lobby) and let people know that it was released.  Use something like `@/all Version 2.0.0 of the Cake has just been released, https://www.nuget.org/packages/Cake.Tool :cake: :rocket:`
-- [ ] Go to the [Cake-Contrib Slack Team](https://cake-contrib.slack.com) and in the General Room let people know that it was released.  Use something like `@channel Version 2.0.0 of the Cake has just been released, https://www.nuget.org/packages/Cake.Tool :cake: :rocket: `
+- [ ] Go to the [Cake-Contrib Gitter Room](https://gitter.im/cake-contrib/Lobby) and let people know that it was released.  Use something like `@/all Version x.x.x of the Cake has just been released, https://www.nuget.org/packages/Cake.Tool :cake: :rocket:`
+- [ ] Go to the [Cake-Contrib Slack Team](https://cake-contrib.slack.com) and in the General Room let people know that it was released.  Use something like `@channel Version x.x.x of the Cake has just been released, https://www.nuget.org/packages/Cake.Tool :cake: :rocket: `
 - [ ] Go to reddit and submit link [reddit.com/r/cakebuild](https://www.reddit.com/r/cakebuild),
   - [ ] reddit/cakebuild - https://www.reddit.com/r/cakebuild/...
   - [ ] cross-post to reddit/dotnet - https://www.reddit.com/r/dotnet/...

@@ -87,10 +87,23 @@ assignees: ''
   - [ ] Commit changes. Use message similar to `(build) Updated Cake tool to version x.x.x`
   - [ ] Push branch `git push`
 - [ ] Trigger new container builds on [GitHub Actions](https://github.com/cake-build/docker/actions).
+- [ ] Move to [bakery](https://github.com/cake-build/bakery) repository
+  - [ ] Create an issue `Update Cake to version x.x.x`
+  - [ ] Create a branch for example `git checkout -b feature/gh-xxx develop`
+  - [ ] Update Cake.Core to x.x.x in src\Cake.Bakery\Cake.Bakery.csproj
+  - [ ] Update Cake.Core to x.x.x in src\Cake.Scripting\Cake.Scripting.csproj
+  - [ ] Update Cake.Core to x.x.x in src\Cake.Scripting.Tests\Cake.Scripting.Tests.csproj
+  - [ ] Update Cake.NuGet to x.x.x in src\Cake.Bakery\Cake.Bakery.csproj
+  - [ ] Update Cake.Common to x.x.x in src\Cake.Scripting\Cake.Scripting.csproj
+  - [ ] Update Cake.Testing to x.x.x in src\Cake.Scripting.Tests\Cake.Scripting.Tests.csproj
+  - [ ] Build everything (`./build.ps1` or `./build.sh`) to make sure it works.
+  - [ ] Commit changes. Use message similar to `(GH-xxx) Updated Cake tool to version x.x.x`
+  - [ ] Push branch and submit pull request
+  - [ ] Have someone else verify the contents
 - [ ] Move to [website](https://github.com/cake-build/website) repository
   - [ ] Create a branch for a new blog post `git checkout -b x.x.x-Blog-Post master`
   - [ ] You can get draft blog post using the console `secrets\Processes\FetchContributors`
-    - `dotnet restore`
+    - dotnet restore
     - `dotnet run -- "cake-build" "cake" "v2.1.0" "8861b463a4eb651f9e5149ee7f7ada47d03ae1ad" "../../../../cake-build/website/input/blog/" vx.x.x`
   - [ ] Bump the Cake Tool Version number in `.config\dotnet-tools.json` to the latest released version, i.e. the version you just released
   - [ ] Commit changes to `.config\dotnet-tools.json` file using message similar to `(build) Updated Cake tool to version x.x.x`

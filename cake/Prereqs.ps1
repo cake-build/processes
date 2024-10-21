@@ -131,13 +131,6 @@ Clone -Organization "cake-build" -Repository "example" -Branches @("master")
 Clone -Organization "cake-build" -Repository "resources" -Branches @("master", "develop")
 Pop-Directory
 
-# Clone homebrew
-CleanDirectory -Path $UserPath
-Push-Directory -Path $UserPath
-Clone -Organization $GithubUsername -Repository "homebrew-core" -Branches @("master")
-AddUpstreamAndRebase -Organization $GithubUsername -Repository "homebrew-core" -Owner "Homebrew" -Branch "master"
-Pop-Directory
-
 # Go back to where we started.
 Pop-Directory
 

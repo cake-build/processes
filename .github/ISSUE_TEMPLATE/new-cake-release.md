@@ -21,8 +21,13 @@ assignees: ''
 ## Let people know that things are happening...
 
 - [ ] Please go to the General Channel in the Slack Team for Cake-Contrib and let people know that a release is away. Use a message similar to the following `@channel We will soon start preparing for the [x.x.x release](https://github.com/cake-build/cake/milestone/xx?closed=1) of Cake. So this is a friendly reminder to pin your Cake version! :pushpin: :cake:`
-- [ ] Using the Cake Twitter account, tweet to let people know that the release is away to happen. Use something like the following `We are starting to prepare our next release, x.x.x (https://github.com/cake-build/cake/milestone/xx?closed=1).  This is your friendly reminder that if you haven't pinned to a specific version of Cake, you should do it now :-) 📌 🍰 https://cakebuild.net/docs/writing-builds/reproducible-builds/`
-- [ ] Retweet the above from the cake-contrib Twitter account
+- [ ] Using the Cake Social accounts let people know that the release is away to happen. Use something like the following `We are starting to prepare our next release, x.x.x (https://github.com/cake-build/cake/milestone/xx?closed=1).  This is your friendly reminder that if you haven't pinned to a specific version of Cake, you should do it now :-) 📌 🍰 https://cakebuild.net/docs/writing-builds/reproducible-builds/`
+  - [ ] Bluesky
+    - [ ] Retweet the above from the cake-contrib account
+  - [ ] Mastodon
+    - [ ] Retweet the above from the cake-contrib account
+  - [ ] Twitter
+    - [ ] Retweet the above from the cake-contrib account
 
 ## GitHub Issues Pre-requisites
 
@@ -47,6 +52,7 @@ assignees: ''
 - [ ] Build everything (`./build.ps1`) to make sure it works (we can never be too sure).
 - [ ] Push `main` branch.
 - [ ] Make sure that all builds succeed before going any further.
+    - [ ] [GitHub Actions](https://github.com/cake-build/cake/actions)
     - [ ] [AppVeyor](https://ci.appveyor.com/project/cakebuild/cake)
     - [ ] [Bitrise Ubuntu](https://app.bitrise.io/app/ea0c6b3c61eb1e79#/builds)
     - [ ] [Bitrise OSX](https://app.bitrise.io/app/42eaef77e8db4a5c#/builds)
@@ -76,6 +82,7 @@ assignees: ''
   - [ ] [Cake.DotNetTool.Module](https://www.nuget.org/packages/Cake.DotNetTool.Module/)
   - [ ] [Cake.Testing](https://www.nuget.org/packages/Cake.Testing/)
   - [ ] [Cake.Testing.Xunit](https://www.nuget.org/packages/Cake.Testing.Xunit/)
+  - [ ] [Cake.Testing.Xunit.v3](https://www.nuget.org/packages/Cake.Testing.Xunit.v3/)
 - [ ] Move to [example](https://github.com/cake-build/example) repository
   - [ ] Bump the Cake Tool Version number in `.config\dotnet-tools.json` to the latest released version, i.e. the version you just released
   - [ ] Build everything (`./build.ps1` or `./build.sh`) to make sure it works.
@@ -111,9 +118,15 @@ assignees: ''
 - [ ] Push the branch and submit a pull request
 - [ ] Have someone else verify the contents
 - [ ] Merge the Pull Request
-- [ ] Go to [develop.cakebuild.net](https://develop.cakebuild.net) once you receive the Azure notification in Slack to say that the development site is deployed.  Make sure that it works as expected.
-- [ ] Go to [cakebuild.net](https://cakebuild.net) once you receive the Azure notification in Slack to say that the development site is deployed.  Make sure that it works as expected.
-- [ ] Go to the [Cake-Contrib Slack Team](https://cake-contrib.slack.com) and in the General Room let people know that it was released.  Use something like `@channel Version x.x.x of the Cake has just been released, https://www.nuget.org/packages/Cake.Tool :cake: :rocket: `
+- [ ] Go to [cakebuild.net](https://cakebuild.net) Make sure that it works as expected.
+- [ ] Go to the [Cake-Contrib Slack Team](https://cake-contrib.slack.com) and in the General Room let people know that it was released.  Use something like `@channel Version x.x.x of the Cake has just been released, https://cakebuild.net/blog/yyyy/mm/cake-vx.x.x-released :cake: :rocket: `
+- [ ] Using the Cake Social accounts promote the blog post i.e. `Version x.x.x of the Cake has just been released, https://cakebuild.net/blog/yyyy/mm/cake-vx.x.x-released 🍰 🚀`
+  - [ ] Twitter
+    - [ ] Retweet the above from the cake-contrib account
+  - [ ] Bluesky
+    - [ ] Retweet the above from the cake-contrib account
+  - [ ] Mastodon 
+    - [ ] Retweet the above from the cake-contrib account
 - [ ] Go to reddit and submit link [reddit.com/r/cakebuild](https://www.reddit.com/r/cakebuild),
   - [ ] reddit/cakebuild - https://www.reddit.com/r/cakebuild/...
   - [ ] cross-post to reddit/dotnet - https://www.reddit.com/r/dotnet/...
@@ -129,10 +142,9 @@ assignees: ''
   - [ ] Click on see your story
   - [ ] Click Publish and enter the tags`DevOps` `Csharp` `Release Notes` `Dotnet` `Continuous Integration`
   - [ ] Click on `Publish Now`
-  - https://cakebuildnet.medium.com/...
-- [ ] .NET Foundation Newsletter
-- [ ] Submit news to form [forms.office.com/r/8hAv7S659s](https://forms.office.com/r/8hAv7S659s)
-- [ ] Submit a request for [content amplification](https://github.com/dotnet-foundation/content) by the .NET Foundation
-  - [ ] https://github.com/dotnet-foundation/content/issues/...
+  - https://cakebuildnet.medium.com/xxx
+- [ ] .NET Foundation
+  - [ ] Submit a request for [content amplification](https://github.com/dotnet-foundation/content) by the .NET Foundation
+    - [ ] https://github.com/dotnet-foundation/content/issues/xxx
 - [ ] Go to the Cake Slack Channel and share the links to Medium, LinkedIn, and Reddit so that other team members can share them
 - [ ] Go and have a drink!
